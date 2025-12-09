@@ -24,9 +24,6 @@ export const generateBobbieGoodsArt = async (base64Image: string): Promise<strin
           },
         ],
       },
-      config: {
-        // System instruction removed from config as it is being passed via text prompt logic
-      }
     });
 
     return extractImageFromResponse(response);
