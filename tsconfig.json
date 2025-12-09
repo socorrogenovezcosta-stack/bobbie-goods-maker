@@ -21,11 +21,11 @@
     "noFallthroughCasesInSwitch": true,
     
     /* Node Types & Paths */
-    "types": ["node"],
+    "types": ["node", "vite/client"],
     "baseUrl": ".",
     "paths": {
       "*": ["*"]
     }
   },
-  "include": ["./**/*.ts", "./**/*.tsx"]
+  "include": ["./**/*.ts", "./**/*.tsx", "vite-env.d.ts"]
 }
