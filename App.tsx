@@ -11,7 +11,9 @@ import { ErrorModal } from './components/ErrorModal';
 import { Gallery } from './components/Gallery';
 import { ArrowLeft } from 'lucide-react';
 import { SavedDrawing } from './types';
-import { STORAGE_KEY } from './constants';
+
+// CONSTANTE DEFINIDA AQUI PARA EVITAR ERROS DE IMPORTAÇÃO
+const STORAGE_KEY = 'bobbie_goods_gallery';
 
 // Updated Enum for clarity
 enum AppState {

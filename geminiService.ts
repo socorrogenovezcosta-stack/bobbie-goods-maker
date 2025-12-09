@@ -1,5 +1,23 @@
+
 import { GoogleGenAI } from "@google/genai";
-import { MODEL_NAME, RANDOM_PROMPTS } from '../constants';
+
+// CONSTANTES DEFINIDAS AQUI PARA EVITAR ERRO DE MODULO
+const MODEL_NAME = 'gemini-2.5-flash-image';
+const RANDOM_PROMPTS = [
+  "A cute bear and a bunny having a picnic on a checkered blanket with watermelon and sandwiches.",
+  "A cozy kitchen scene with a puppy baking cookies, flour messy on the counter.",
+  "A bedroom with a fluffy dog writing a letter at a desk, with a fishbowl and posters.",
+  "Cute animals ordering burgers at a cafe stand with a striped awning.",
+  "Jesus sitting in a garden surrounded by cute smiling children.",
+  "A nativity scene with cute baby Jesus, Mary, Joseph, and farm animals.",
+  "A bear fishing on a wooden dock with a little duckling watching.",
+  "A festive Christmas scene with puppies decorating a gingerbread house.",
+  "Cute cats building a sandcastle on the beach under the sun.",
+  "A bunny watering plants in a greenhouse full of flowers and pots.",
+  "Jesus holding a little lamb in his arms, surrounded by flowers.",
+  "Two teddy bears hugging in a cozy living room with a fireplace.",
+  "A little mouse and a bear reading a book under a big tree."
+];
 
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
