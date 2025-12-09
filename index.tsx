@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import './index.css'; // Opcional, caso você crie um arquivo CSS global, mas não vai quebrar se não tiver
 
 const rootElement = document.getElementById('root');
 
