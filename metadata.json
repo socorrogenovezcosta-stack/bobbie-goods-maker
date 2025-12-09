@@ -1,0 +1,8 @@
+{
+  "name": "Copy of Bobbie Goods Magic Maker",
+  "description": "Um aplicativo mágico que transforma suas fotos em desenhos fofos no estilo Bobbie Goods usando Gemini AI.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
