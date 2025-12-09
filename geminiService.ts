@@ -19,7 +19,14 @@ const RANDOM_PROMPTS = [
   "A little mouse and a bear reading a book under a big tree."
 ];
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+// ATENÇÃO: Usando import.meta.env.VITE_API_KEY para compatibilidade com Vite/Netlify
+const API_KEY = import.meta.env.VITE_API_KEY;
+
+if (!API_KEY) {
+  console.warn("API Key não encontrada! Configure VITE_API_KEY no Netlify.");
+}
+
+const ai = new GoogleGenAI({ apiKey: API_KEY || "CHAVE_FALTANDO" });
 
 export const generateBobbieGoodsArt = async (base64Image: string): Promise<string> => {
   // Remove header if present (e.g., "data:image/jpeg;base64,")
